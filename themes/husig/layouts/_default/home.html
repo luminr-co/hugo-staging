@@ -1,0 +1,520 @@
+{{ define "main" }}
+
+<!-- {{ .Content }}
+  {{ range site.RegularPages }}
+    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+    {{ .Summary }}
+  {{ end }} -->
+
+<div class="Shimmy_sza_container">
+  <div id="heroSectionShimmy" class="Shimmy_sza"></div>
+</div>
+
+<section class="hero_section">
+  <div class="hero_text">
+    <h1>
+      Transform <span class="raw_data_span">Raw Data</span> Into Actionable
+      Insights
+    </h1>
+    <p class="hero_desc">
+      We rapidly develop, refine, and deploy end-to-end analytics applications
+      using cutting-edge tools and capabilities you will need to make
+      intelligent business decisions.
+    </p>
+    <div class="logobutton" id="hero-logobutton">
+      <button id="hero-logo-button" class="husig_cta">
+        <img src="images/homepage/calendar_icon.svg" alt="Logo" class="logo" />
+        <span class="button-text">Book a Free Discovery Call</span>
+      </button>
+    </div>
+  </div>
+  <div class="hero_image">
+    <img src="images/homepage/hero.webp" alt="husig hero image" />
+  </div>
+</section>
+
+<div id="trusted-by-top-companies">
+  <h3>Trusted by Top Companies</h3>
+</div>
+
+<div class="clients">
+  <div class="clients_row">
+    <img
+      src="images/homepage/google_logo.svg.svg"
+      alt="google"
+      class="clients_row_images"
+    />
+    <img src="images/homepage/adidas.svg" alt="adidas" class="clients_row_images" />
+    <img src="images/homepage/airbonb.svg" alt="google" class="clients_row_images" />
+    <img
+      src="images/homepage/apple_logo.svg.svg"
+      alt="google"
+     class="clients_row_images"
+    />
+    <img
+      src="images/homepage/mcdonalds_symbol.svg.svg"
+      alt="google"
+     class="clients_row_images"
+    />
+    <img src="images/homepage/Logo.svg.svg" alt="google" class="clients_row_images" />
+  </div>
+</div>
+
+{{/* Homepage: Section 2 */}}
+
+<section id="homepage-section-2">
+  <div class="Shimmy_sza_container">
+    <div id="Section2Shimmy" class="Shimmy_sza"></div>
+  </div>
+
+  <h1 class="husig_h2_tag" id="analysis-to-action">
+    From Analysis to Action: Services That Drive Results
+  </h1>
+
+  {{/*  mobile view service dropdown  */}}
+  {{ partial "mobile_view_components/services_tab_mobile.html" . }}
+
+  <div id="nulla">
+
+    <div id="sec2-buttons" style="height: 96px">
+      <button class="sec2_inactive_class tab_button active" data-tab="tab1">
+        Analytics
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab2">
+        Decision Sciences
+      </button>
+      <button class="sec2_inactive_class tab_button" data-tab="tab3">
+        Data Engineering and Infra
+      </button>
+    </div> 
+
+    </div>
+
+    <div id="homepage-tabs-1221">
+      <div class="tab-content active" id="tab1">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/Analytics.webp"
+            alt="Analytics Illustration"
+          />
+        </div>
+        <div class="right">
+          <h2 class="purple_h2">Analytics</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Comprehensive Data Integration and Automation
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Tailored Analytical Solutions
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Advanced Reporting and Visualization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Expertise in Leading Technologies
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />End-to-End Analytics Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Client-Centric Approach
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab2">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/DecisionSciences.webp"
+            alt="Analytics Illustration"
+          />
+        </div>
+        <div class="right">
+          <h2 class="purple_h2">Decision Sciences</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Strategic Consulting and Framework Development
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Operational Research and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Scenario Analysis and Risk Management
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Expertise in Leading Technologies
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />End-to-End Decision Science Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Client-Centric Approach
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab3">
+        <div class="left">
+          <img
+            class="sec2_illust"
+            src="images/homepage/DataEng.webp"
+            alt="Analytics Illustration"
+          />
+        </div>
+        <div class="right">
+          <h2 class="purple_h2">Data Engineering and Infra</h2>
+          <div class="icon_list_div">
+            <ul class="icon-list husig_h3_tag">
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Modernization and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Data Governance and Compliance
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Infrastructure Management and Optimization
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Data Engineering Services
+              </li>
+              <li>
+                <img
+                  src="images/homepage/list_icon.svg"
+                  alt="list icon"
+                  class="list_icon_image"
+                />Training and Best Practices
+              </li>
+            </ul>
+          </div>
+          <button class="husig_cta learn_more_cta">Learn More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{/* cta */}}
+  <div style="width: 100%">
+    <div class="logobutton">
+      <button class="husig_cta hero-logo-button">
+        <img src="images/homepage/calendar_icon.svg" alt="Logo" class="logo" />
+        <span class="button-text">Book a Free Discovery Call</span>
+      </button>
+    </div>
+  </div>
+  {{/* end */}}
+</section>
+
+{{/* section 3 starts here */}}
+
+<section id="home-sec-3">
+  <h1 class="husig_h2_tag" id="">
+    Industry-Standard Tools for Reliable Data Insights Trusted by Data Science
+    Professionals
+  </h1>
+
+  <div class="section_3_companies">
+
+    {{ partial "mobile_view_components/mobile_view_technologies" . }}
+
+    <div class="clients_row" id="row-1-techs">
+      <img
+        src="images/homepage/companies/tableau_logo.svg.svg"
+        alt="google"
+        width="299.18px"
+      />
+      <img
+        src="images/homepage/companies/python.svg"
+        alt="python"
+        width="71.19px"
+      />
+      <img
+        src="images/homepage/companies/pytorch_logo.svg.svg"
+        alt="pytorch"
+        width="56.38px"
+      />
+      <img
+        src="images/homepage/companies/R_logo 1.svg"
+        alt="R"
+        width="87.4px"
+      />
+      <img
+        src="images/homepage/companies/SimPy_logo 1.svg"
+        alt="SimPy_logo 1"
+        width="167.04px"
+      />
+      <img
+        src="images/homepage/companies/amazon_web_services_logo.svg.svg"
+        alt="amazonweb"
+        width="90.22px"
+      />
+    </div>
+    <div class="clients_row" id="row-2-techs">
+      <img
+        src="images/homepage/companies/ninjaStar.svg"
+        alt="njastr"
+        width=""
+      />
+      <img
+        src="images/homepage/companies/Apache_Spark_logo 1.svg"
+        alt="apacheSpark"
+        width="127.57px"
+      />
+      <img
+        src="images/homepage/companies/dbt_labs_logo.svg.svg"
+        alt="dbt labs"
+        width="178.32px"
+      />
+      <img
+        src="images/homepage/companies/Mask group-1.svg"
+        alt="pyomo"
+        width="208.22px"
+      />
+      <img
+        src="images/homepage/companies/tensorflow_logo.svg.svg"
+        alt="tensorflow"
+        width="119.82px"
+      />
+    </div>
+    <div class="clients_row" id="row-3-techs">
+      <img
+        src="images/homepage/companies/Mask group.svg"
+        alt="pyonomo"
+        width="210.59px"
+      />
+
+      <img
+        src="images/homepage/companies/snowflake_logo.svg.svg"
+        alt="snowflake"
+        width="301.66px"
+      />
+
+      <img
+        src="images/homepage/companies/labelbox_logo.svg.svg"
+        alt="labelbox"
+        width="309.41px"
+      />
+    </div>
+  </div>
+</section>
+
+{{/* section 3 ends here */}} {{/* section 4 starts here */}}
+
+<section id="home-sec-4">
+  <div class="Shimmy_sza_container">
+    <div id="Section4Shimmy" class="Shimmy_sza"></div>
+  </div>
+
+  <h1 class="husig_h2_tag" id="h1-a-1">
+    Our Flexible Engagement Models Tailored to Your Needs for Seamless
+    Collaboration
+  </h1>
+
+  <article class="homepage_article">
+    <div class="sec_4_article">
+      <img
+        id="project-based"
+        src="images/homepage/article/one.webp"
+        alt="Project-Based Delivery"
+      />
+
+      <div class="sec_4_texts">
+        <h3 class="husig_midtitle">Project-Based Delivery</h3>
+        <ul class="sec-4 icon-list husig_h3_tag">
+          <li>
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Tailored Solutions
+          </li>
+          <p class="sec_4_para hero_desc">
+            Partner with us to deliver a project tailored to your unique
+            requirements and objectives. Our team works closely with you to
+            define project scope, timelines, and deliverables, ensuring that we
+            meet your expectations every step of the way.
+          </p>
+
+          <li class="second_li">
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Timely Delivery
+          </li>
+
+          <p class="hero_desc sec_4_para">
+            It's our guarantee that we will deliver your project on time and
+            within budget. Our proven project management methodologies and
+            dedicated project teams ensure that we meet deadlines and exceed
+            your expectations.
+          </p>
+        </ul>
+      </div>
+    </div>
+
+    <div id="staff-aug-div" class="sec_4_article">
+      <img
+        id="project-based"
+        src="images/homepage/article/two.webp"
+        alt="Project-Based Delivery"
+      />
+
+      <div class="sec_4_texts">
+        <h3 class="husig_midtitle">Staff Augmentation</h3>
+        <ul class="sec-4 icon-list husig_h3_tag">
+          <li>
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Dedicated Experts
+          </li>
+          <p class="sec_4_para hero_desc">
+            Get access to our pool of talented professionals who function as an
+            extension of your team for a fixed duration. Whether you need
+            additional support for a specific project or ongoing assistance, our
+            dedicated experts are here to help.
+          </p>
+
+          <li class="second_li">
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Flexibility
+          </li>
+
+          <p class="hero_desc sec_4_para">
+            Our staff augmentation services are designed to provide you with the
+            flexibility to scale your team up or down as needed. Whether you
+            need a single resource or a team of experts, we can quickly adapt to
+            meet your changing requirements. We adhere to your timezones.
+          </p>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec_4_article">
+      <img
+        id="project-based"
+        src="images/homepage/article/three.webp"
+        alt="Project-Based Delivery"
+      />
+
+      <div class="sec_4_texts">
+        <h3 class="husig_midtitle">On-Demand Support</h3>
+        <ul class="sec-4 icon-list husig_h3_tag">
+          <li>
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Flexible Support
+          </li>
+          <p class="sec_4_para hero_desc">
+            Access on-demand support from our experts whenever you need it,
+            ensuring timely assistance for critical issues and challenges.
+            Whether you require ad-hoc support or part-time assistance on a
+            regular basis, we've got you covered.
+          </p>
+
+          <li class="second_li">
+            <img
+              src="images/homepage/list_icon.svg"
+              alt="list icon"
+              class="list_icon_image"
+            />Global Compatibility
+          </li>
+
+          <p class="hero_desc sec_4_para">
+            Our on-demand support services are compatible with different time
+            zones, ensuring that you can access support when you need it,
+            regardless of your location. Our team is available to provide
+            assistance and guidance whenever you need it, ensuring continuity
+            and peace of mind.
+          </p>
+        </ul>
+      </div>
+    </div>
+  </article>
+</section>
+
+{{/* section 5 */}} {{ partial "homepage/homepageSection5.html" }} {{/* end */}}
+{{/* section Testimonials */}} {{ partial
+"homepage/homepageTestimonialsSection.html" }} {{/* end */}} {{/* section
+Testimonials */}} {{ partial "homepage/homepageFaqSection.html" }} {{/* end */}}
+{{/* end */}} {{ end }}
