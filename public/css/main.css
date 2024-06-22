@@ -164,6 +164,8 @@ a {
   list-style: none;
   background-color: rgba(173, 90, 204, 0.1);
   backdrop-filter: blur(60px);
+  -webkit-backdrop-filter: blur(60px);
+
   min-width: 17.8645833333vw;
   padding: 16px;
 }

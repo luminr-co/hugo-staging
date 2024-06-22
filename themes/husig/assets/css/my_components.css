@@ -73,7 +73,7 @@
 
 /* background shimmy */
 .Shimmy_sza {
-  display: none;
+  display: block;
   position: absolute !important;
   width: 139.1666666667vw;
   height: 326.61px;
