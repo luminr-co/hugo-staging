@@ -5,7 +5,8 @@
   
   @media (max-width: 1256px) {
     div.dropdown-mobile_123 {
-      display: block !important;
+      display: flex !important;
+      align-items: flex-end;
     }
     body,
     body * {
@@ -139,7 +140,7 @@
       font-family: "General Sans";
       font-weight: 600;
       line-height: 21.6px;
-      width: 100%;
+      width: 165px;
       border-radius: 4px;
     }
     .dropdown-menu_123 {
@@ -182,6 +183,7 @@
       min-width: 85vw;
       overflow-y: visible !important;
       z-index: 1000;
+
     }
     .dropdown-mobile_123 #dropdownMenu_123 {
       z-index: 1000 !important;
