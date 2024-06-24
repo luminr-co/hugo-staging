@@ -4,16 +4,37 @@
   {{ partial "head.html" . }}
 </head>
 <body>
+  {{  partial "my_components/mobilemenu.html" . }}
+
   <!-- enter luminr grain -->
   {{/*  <div class="grain"></div>  */}}
   <header>
     {{ partial "header.html" . }}
+    
   </header>
   <main>
+
+
     {{ block "main" . }}{{ end }}
   </main>
   <footer>
     {{ partial "footer.html" . }}
   </footer>
+
+  <script>
+    // --------------- code for mobile menu goes here ----------------------------
+
+function myMmFunction() {
+  var xmm = document.getElementById("myLinks-mm");
+  if (xmm.style.display === "block") {
+    xmm.style.display = "none";
+    console.log("mobile menu works")
+  } else {
+    xmm.style.display = "block";
+  }
+} 
+
+//----------end---------------------------------------------------------------
+  </script>
 </body>
 </html>

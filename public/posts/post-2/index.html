@@ -60,6 +60,34 @@
 
 </head>
 <body>
+  <section id="my-mobile-menu">
+    <div class="topnav_mm">
+        <a href="#" class="active_mm" id="mm_text_logo">logo</a>
+        
+        <div id="myLinks-mm">
+    <h2>Company</h2>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>            
+    <h2>Services</h2>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>            
+    <h2>Platforms</h2>
+    <a href="#">News</a>
+    <a href="#">Contact</a>
+    <a href="#">About</a>            
+         
+        </div>
+        
+        <a href="javascript:void(0);" class="icon_mm" onclick="myMmFunction()">
+            <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H23M1 9H23M1 17H23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </a>
+      </div>
+</section>
+
   
   
   <header>
@@ -194,8 +222,8 @@
     
   </ul>
 </div>
-
  </nav>
+
 
   <div class="cta"><a href=""><button type="button" id="book-a-call"  class="husig_cta">
     Book a Call
@@ -203,8 +231,11 @@
 </div>
 </div>
 
+    
   </header>
   <main>
+
+
     
 
 
@@ -329,23 +360,23 @@
     </div>
     <div class="footer-col-2">
       <div id="col_1" class="footer_text_links">
-        <a href=""><p class="footer_title">Company</p></a>
-        <a href=""><p class="footer_items">About</p></a>
+        <a href="/about/"><p class="footer_title">Company</p></a>
+        <a href="/about/"><p class="footer_items">About</p></a>
         <a href=""><p class="footer_items">Our Team</p></a>
         <a href=""><p class="footer_items">Careers</p></a>
         <a href=""><p class="footer_items">Blogs</p></a>
       </div>
       <div id="col_2" class="footer_text_links">
-        <a href=""><p class="footer_title">Platforms</p></a>
-        <a href=""><p class="footer_items">HuSig Incog</p></a>
-        <a href=""><p class="footer_items">HuSig Harmony</p></a>
-        <a href=""><p class="footer_items">HuSig Fabri</p></a>
+        <a href="/platform/"><p class="footer_title">Platforms</p></a>
+        <a href="/platform/#husig-incog"><p class="footer_items">HuSig Incog</p></a>
+        <a href="/platform/#husig-harmony"><p class="footer_items">HuSig Harmony</p></a>
+        <a href="/platform/#husig-fabri"><p class="footer_items">HuSig Fabri</p></a>
       </div>
       <div id="col_3" class="footer_text_links">
-        <a href=""><p class="footer_title">Services</p></a>
-        <a href=""><p class="footer_items">Analytics</p></a>
-        <a href=""><p class="footer_items">Decision Sciences</p></a>
-        <a href=""><p class="footer_items">Data Engineering and Infra</p></a>
+        <a href="/services/"><p class="footer_title">Services</p></a>
+        <a href="/services/#analytics"><p class="footer_items">Analytics</p></a>
+        <a href="/services/#decision-sciences"><p class="footer_items">Decision Sciences</p></a>
+        <a href="/services/#data-eng"><p class="footer_items">Data Engineering and Infra</p></a>
       </div>
     </div>
   </div>
@@ -363,5 +394,21 @@
 </section>
 
   </footer>
+
+  <script>
+    
+
+function myMmFunction() {
+  var xmm = document.getElementById("myLinks-mm");
+  if (xmm.style.display === "block") {
+    xmm.style.display = "none";
+    console.log("mobile menu works")
+  } else {
+    xmm.style.display = "block";
+  }
+} 
+
+
+  </script>
 </body>
 </html>
