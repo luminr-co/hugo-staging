@@ -167,7 +167,7 @@ div.dropdown-mobile_123 {
 
 /* Mobile menu css starts here */
 
-section#my-mobile-menu  {
+section#my-mobile-menu {
   display: none;
   position: fixed;
   overflow: visible;
@@ -177,37 +177,64 @@ section#my-mobile-menu  {
   right: 0;
 }
 
-
-
-@media(max-width: 1256px){
-
+@media (max-width: 1256px) {
   * {
     overflow-x: hidden !important;
   }
 
-  
-
-
-  section#my-mobile-menu{
+  section#my-mobile-menu {
     display: block;
+    overflow-y: auto !important;
   }
 
   section#my-mobile-menu .topnav_mm {
     overflow: visible;
     background-color: hsla(265, 62%, 7%, 0);
     position: relative;
-
-
   }
-  
+
   /* Hide the links inside the navigation menu (except for logo/home) */
   section#my-mobile-menu .topnav_mm #myLinks-mm {
     display: none;
     width: 100vw;
+    background-color: hsla(265, 62%, 7%, 1);
     height: 100vh;
-    background-color:  hsla(265, 62%, 7%, 1);
+    padding: 27px;
+    padding-top: 0;
   }
-  
+
+  section#my-mobile-menu .topnav_mm #myLinks-mm h2 {
+    padding: 0;
+    margin: 0;
+    /* Company */
+
+    font-family: "General Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    /* identical to box height */
+
+    color: #ffffff;
+
+    margin-bottom: 8px;
+    margin-top: 32px;
+  }
+
+  section#my-mobile-menu .topnav_mm #myLinks-mm a{
+    font-family: "General Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+
+    padding: 0;
+    margin: 0;
+
+    margin-bottom: 12px;
+  }
+
   /* Style navigation menu links */
   section#my-mobile-menu .topnav_mm a {
     color: white;
@@ -216,7 +243,7 @@ section#my-mobile-menu  {
     font-size: 17px;
     display: block;
   }
-  
+
   /* Style the hamburger menu */
   section#my-mobile-menu .topnav_mm a.icon_mm {
     background: transparent;
@@ -227,27 +254,23 @@ section#my-mobile-menu  {
     right: 0;
     top: 0;
 
-  margin-right: 23px;
-
+    margin-right: 23px;
   }
-  
+
   /* Add a grey background color on mouse-over */
   section#my-mobile-menu .topnav_mm a:hover {
     background-color: hsla(265, 62%, 7%, 0);
     color: none;
   }
-  
+
   /* Style the active link (or home/logo) */
   .active_mm {
-    background-color:  hsla(265, 62%, 7%, 0);
-    color:  hsla(265, 62%, 7%, 0);
+    background-color: hsla(265, 62%, 7%, 0);
+    color: hsla(265, 62%, 7%, 0);
   }
 
   section#my-mobile-menu #mm_text_logo {
-
-
-      background: transparent;
-     
+    background: transparent;
 
     color: transparent;
   }

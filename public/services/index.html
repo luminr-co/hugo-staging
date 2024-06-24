@@ -60,6 +60,34 @@
 
 </head>
 <body>
+  <section id="my-mobile-menu">
+    <div class="topnav_mm">
+        <a href="#" class="active_mm" id="mm_text_logo">logo</a>
+        
+        <div id="myLinks-mm">
+    <h2>Company</h2>
+    <a href="/about/">About</a>
+             
+    <h2>Services</h2>
+    <a href="/services/#analytics">Analytics</a>
+    <a href="/services/#decision-sciences">Decision Sciences</a>
+    <a href="/services/#data-eng">Data Engineering and Infra</a>            
+    <h2>Platforms</h2>
+    <a href="/platform/#husig-fabri">HuSig Fabri</a>
+    <a href="/platform/#husig-incog">HuSig Incog</a>
+    <a href="/platform/#husig-harmony">HuSig Harmony</a>   
+    <button class="husig_cta">Book a Call</button>         
+         
+        </div>
+        
+        <a href="javascript:void(0);" class="icon_mm" onclick="myMmFunction()">
+            <svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H23M1 9H23M1 17H23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+        </a>
+      </div>
+</section>
+
   
   
   <header>
@@ -196,21 +224,6 @@
 </div>
  </nav>
 
-  <section id="my-mobile-menu">
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        
-        <div id="myLinks">
-          <a href="#news">News</a>
-          <a href="#contact">Contact</a>
-          <a href="#about">About</a>
-        </div>
-        
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-</section>
 
   <div class="cta"><a href=""><button type="button" id="book-a-call"  class="husig_cta">
     Book a Call
@@ -218,8 +231,11 @@
 </div>
 </div>
 
+    
   </header>
   <main>
+
+
     
   
   
@@ -857,5 +873,21 @@ Data Platform Architecture        </li>
 </section>
 
   </footer>
+
+  <script>
+    
+
+function myMmFunction() {
+  var xmm = document.getElementById("myLinks-mm");
+  if (xmm.style.display === "block") {
+    xmm.style.display = "none";
+    console.log("mobile menu works")
+  } else {
+    xmm.style.display = "block";
+  }
+} 
+
+
+  </script>
 </body>
 </html>
