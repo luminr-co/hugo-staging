@@ -71,6 +71,9 @@
   align-self: center;
 }
 
+.Shimmy_sza_container{
+  position: unset !important;
+}
 /* background shimmy */
 .Shimmy_sza {
   display: block;
@@ -93,12 +96,14 @@
 }
 
 #Section4Shimmy {
-  top: 0px;
-  position: absolute;
-  opacity: 0.15;
+  top: 0;
+  position: relative;
+  opacity: 15%;
+  left: 0;
 }
 
 #Section5Shimmy {
+  position: relative;
   top: -100px;
   opacity: 0.15;
 }
