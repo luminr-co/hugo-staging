@@ -4,6 +4,10 @@
   }
   
   @media (max-width: 1256px) {
+    div#homepage-tabs-1221 div.right  a{
+      width: 100%;
+    }
+
     div.dropdown-mobile_123 {
       display: flex !important;
       align-items: flex-end;
