@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body>
-  {{  partial "my_components/mobilemenu.html" . }}
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    {{ partial "my_components/mobilemenu.html" . }}
 
-  <!-- enter luminr grain -->
-  {{/*  <div class="grain"></div>  */}}
-  <header>
-    {{ partial "header.html" . }}
-    
-  </header>
-  <main>
+    <!-- enter luminr grain -->
+    {{/*
+    <div class="grain"></div>
+    */}}
+    <header>{{ partial "header.html" . }}</header>
+    <main>{{ block "main" . }}{{ end }}</main>
+    <footer>{{ partial "footer.html" . }}</footer>
 
+    <script>
+      // --------------- code for mobile menu goes here ----------------------------
 
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+      function myMmFunction() {
+        var xmm = document.getElementById("myLinks-mm");
+        if (xmm.style.display === "block") {
+          xmm.style.display = "none";
+          console.log("mobile menu works");
+        } else {
+          xmm.style.display = "block";
+        }
+      }
 
-  <script>
-    // --------------- code for mobile menu goes here ----------------------------
+      //----------end---------------------------------------------------------------
 
-function myMmFunction() {
-  var xmm = document.getElementById("myLinks-mm");
-  if (xmm.style.display === "block") {
-    xmm.style.display = "none";
-    console.log("mobile menu works")
-  } else {
-    xmm.style.display = "block";
-  }
-} 
+      // code for mobile tab UI
+        function myAbcFunction() {
+          document
+            .getElementById("myDropdown-mm-a")
+            .classList.toggle("show_mm_a");
+        }
 
-//----------end---------------------------------------------------------------
-  </script>
-</body>
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches(".dropbtn_mm_a")) {
+            var dropdowns = document.getElementsByClassName(
+              "dropdown-content_mm_a"
+            );
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains("show_mm_a")) {
+                openDropdown.classList.remove("show_mm_a");
+              }
+            }
+          }
+        };
+    </script>
+  </body>
 </html>

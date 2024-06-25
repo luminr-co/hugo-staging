@@ -221,7 +221,7 @@ section#my-mobile-menu {
     margin-top: 32px;
   }
 
-  section#my-mobile-menu .topnav_mm #myLinks-mm a{
+  section#my-mobile-menu .topnav_mm #myLinks-mm a {
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
@@ -274,4 +274,90 @@ section#my-mobile-menu {
 
     color: transparent;
   }
+
+  /* css for services tab en mobiel */
+}
+
+@media (max-width: 1256px) {
+ 
+  #myDropdown-mm-a {
+    width: 100%;
+    margin-top: 46px;
+    
+  }
+
+  .dropdown_mm_a {
+    display: flex !important;
+    position: relative;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    z-index: 1500;
+    height: 400px;
+
+  }
+
+  .dropbtn_mm_a {
+    background-color: hsla(284, 53%, 58%, 1);
+    color: hsla(265, 62%, 7%, 1);
+    padding: 0;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    /* dropdown button fonts */
+
+    font-family: 'General Sans';
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.6px;
+    text-align: left;
+
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    width: 165px;
+    padding: 12px 32px;
+    max-height: 46px;
+
+  }
+
+  .dropbtn_mm_a:hover,
+  .dropbtn_mm_a:focus {
+    background-color: hsla(284, 53%, 58%, 1);
+  }
+
+  .dropdown_mm_a {
+    display: inline-block;
+  }
+
+  .dropdown-content_mm_a {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    overflow: auto;
+    z-index: 1;
+    background-color: hsla(265, 62%, 7%, 1);
+  }
+
+  .dropdown-content_mm_a a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: white;
+
+  }
+
+ 
+
+  .show_mm_a {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.dropdown_mm_a {
+  display: none;
 }
