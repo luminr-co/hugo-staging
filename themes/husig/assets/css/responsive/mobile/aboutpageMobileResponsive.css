@@ -279,15 +279,17 @@
 
 @media (max-width: 1256px) {
 
-
+  section#husig-harmony {
+    margin-bottom: 134px;
+  }
 
   h1#plat_Header_1 {
     margin-top: 58px;
     font-family: "Clash Display";
     font-style: normal;
     font-weight: 600;
-    font-size: 64px;
-    line-height: 72px;
+    font-size: 32px;
+    line-height: 40px;
     /* identical to box height, or 112% */
 
     /* white */
@@ -318,12 +320,12 @@
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 22px;
 
     color: #ffffff;
     max-width: 100%;
-    margin-top: 16px;
+    margin-top: 8px;
   }
 
   /* bottom section */
@@ -422,8 +424,8 @@
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 120%;
+    font-size: 16px;
+    line-height: 21.6px;
     /* identical to box height, or 29px */
     display: flex;
     align-items: center;
@@ -446,7 +448,8 @@
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 21.6px;
     display: flex;
     align-items: center;
     color: white;
