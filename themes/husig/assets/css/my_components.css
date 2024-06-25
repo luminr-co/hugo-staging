@@ -279,11 +279,14 @@ section#my-mobile-menu {
 }
 
 @media (max-width: 1256px) {
- 
+
+  button.myDropdonw_items {
+    all: unset;
+  }
+
   #myDropdown-mm-a {
     width: 100%;
     margin-top: 46px;
-    
   }
 
   .dropdown_mm_a {
@@ -294,7 +297,6 @@ section#my-mobile-menu {
     right: 0;
     z-index: 1500;
     height: 400px;
-
   }
 
   .dropbtn_mm_a {
@@ -306,7 +308,7 @@ section#my-mobile-menu {
     cursor: pointer;
     /* dropdown button fonts */
 
-    font-family: 'General Sans';
+    font-family: "General Sans";
     font-size: 16px;
     font-weight: 600;
     line-height: 21.6px;
@@ -321,7 +323,6 @@ section#my-mobile-menu {
     width: 165px;
     padding: 12px 32px;
     max-height: 46px;
-
   }
 
   .dropbtn_mm_a:hover,
@@ -348,10 +349,7 @@ section#my-mobile-menu {
     text-decoration: none;
     display: block;
     color: white;
-
   }
-
- 
 
   .show_mm_a {
     display: flex;
