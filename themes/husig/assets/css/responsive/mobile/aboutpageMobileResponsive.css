@@ -144,8 +144,8 @@
     font-family: "Clash Display";
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
+    font-size: 24px;
+    line-height: 29.52px;
 
     /* amethyst-primary */
     color: var(--hgPurple);
@@ -157,8 +157,8 @@
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 14px;
+    line-height: 22px;
     min-width: 100%;
     color: #ffffff;
   }
@@ -169,8 +169,8 @@
     font-family: "General Sans";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 21.6px;
     /* identical to box height */
 
     color: #ffffff;
@@ -199,13 +199,26 @@
     max-width: 100%;
   }
 
+  .text_div_serv_page .serv_Para {
+    padding: 0;
+    margin: 0;
+    font-family: "General Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    min-width: 100%;
+    color: #ffffff;
+  }
+
   .serv_Hero_div {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding: 0;
     justify-content: space-between;
-    padding-left: calc((138 / 1920) * 100vw);
-    padding-bottom: 157.11px;
+    padding-bottom: 34px;
+    gap: 32px;
   }
 
   .serv_Hero_div img {
@@ -228,7 +241,7 @@
   .box-1 {
     background-color: hsla(267, 50%, 34%, 0.1);
     border: 2px solid hsla(267, 53%, 48%, 1);
-    padding: 40px;
+    padding:  40px 24px;
     border-radius: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     height: 100%;
@@ -265,6 +278,9 @@
 /* nexpage : Platforms */
 
 @media (max-width: 1256px) {
+
+
+
   h1#plat_Header_1 {
     margin-top: 58px;
     font-family: "Clash Display";
