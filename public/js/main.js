@@ -135,8 +135,7 @@
       scrollContainer.style.cursor = "grab";
     });
     scrollContainer.addEventListener("mousemove", (e) => {
-      if (!isDown)
-        return;
+      if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - scrollContainer.offsetLeft;
       const walk = (x - startX) * 2;
