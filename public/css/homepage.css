@@ -59,9 +59,9 @@ section.hero_section div.hero_text p.hero_desc {
   margin-top: 32px;
   font-family: "General Sans";
   font-style: normal;
-  font-weight: 500;
-  font-size: 28px;
-  line-height: 38px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
   /* white */
   color: #ffffff;
 }
